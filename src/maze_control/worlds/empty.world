@@ -1,0 +1,6 @@
+<sdf version="1.6"><world name="course_maze">
+<physics name="default" type="ode"><max_step_size>0.001</max_step_size><real_time_update_rate>1000</real_time_update_rate></physics>
+<light name="sun" type="directional"><pose>0 0 10 0 0 0</pose><diffuse>0.8 0.8 0.8 1</diffuse><direction>-0.3 -0.4 -1</direction><cast_shadows>true</cast_shadows></light>
+<model name="floor"><static>true</static><link name="link"><collision name="collision"><geometry><plane><normal>0 0 1</normal><size>30 30</size></plane></geometry></collision><visual name="visual"><geometry><plane><normal>0 0 1</normal><size>30 30</size></plane></geometry><material><ambient>0.85 0.85 0.85 1</ambient><diffuse>0.85 0.85 0.85 1</diffuse></material></visual></link></model>
+<gui fullscreen="0"><camera name="overview"><pose>2.5 -5.5 9 0 0.85 1.5707</pose><view_controller>orbit</view_controller></camera></gui>
+</world></sdf>
